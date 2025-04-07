@@ -1,0 +1,113 @@
+body {
+  background-color: #111;
+  background-image: url('/img/space.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1000px;
+  background-attachment: scroll;
+  color: #fff;
+  font-family: "Crimson Text", "Cambria", "Cochin", "Georgia", "serif";
+  font-weight: 400;
+  padding: 20px;
+}
+
+h1, b, strong { color: #fff; }
+h1 { margin-bottom: 24px; }
+
+a {
+  border-bottom: 1px dashed #dfe;
+  color: #6fc;
+  text-decoration: none;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+  width: 800px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+}
+
+.top {
+  padding: 40px 0 80px 0;
+  text-align: center;
+}
+
+.top h1 {
+  font-size: 72px;
+  margin: 0;
+}
+
+.top h2 {
+  font-family: "Goudy Bookletter 1911";
+  font-size: 36px;
+  font-weight: 300;
+  margin: -20px 0 0 0;
+}
+
+.info h2 {
+  color: #fff;
+  font-family: "Goudy Bookletter 1911";
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.info div {
+  color: #ccc;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.info .card {
+  padding: 0 0 36px 0;
+}
+
+.info .label {
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  width: 120px;
+}
+
+.fun {
+  font-family: "Henny Penny", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.scrapbook {
+  position: relative;
+}
+
+.scrapbook img {
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 1.0));
+  position: absolute;
+  width: 200px;
+}
+
+.button {
+  background-color: #186;
+  border-radius: 4px;
+  color: #fff!important;
+  font-size: 24px!important;
+  padding: 5px 10px;
+  text-align: center;
+}

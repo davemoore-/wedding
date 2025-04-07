@@ -11,112 +11,28 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Goudy+Bookletter+1911&family=Henny+Penny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
-  <style stype="text/css">
-    body {
-      background-color: #222;
-      color: #fff;
-      font-family: "Crimson Text", "Cambria", "Cochin", "Georgia", "serif";
-      font-weight: 400;
-      padding: 20px;
-    }
-
-    a {
-      border-bottom: 1px dashed #dfe;
-      color: #6fc;
-      text-decoration: none;
-    }
-
-    .app {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      position: relative;
-      width: 800px;
-    }
-
-    .row {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-
-    .column {
-      display: flex;
-      flex: 50%;
-      flex-direction: column;
-    }
-
-    .top {
-      padding: 40px 0 80px 0;
-      text-align: center;
-    }
-
-    .top h1 {
-      font-size: 72px;
-      margin: 0;
-    }
-
-    .top h2 {
-      font-family: "Goudy Bookletter 1911";
-      font-size: 36px;
-      font-weight: 300;
-      margin: -20px 0 0 0;
-    }
-
-    .info h2 {
-      color: #fff;
-      font-family: "Goudy Bookletter 1911";
-      font-size: 36px;
-      font-weight: 700;
-      margin: 0 0 8px 0;
-    }
-
-    .info div {
-      color: #ccc;
-      font-size: 30px;
-      line-height: 36px;
-    }
-
-    .info .card {
-      padding: 0 0 36px 0;
-    }
-
-    .fun {
-      font-family: "Henny Penny", serif;
-      font-weight: 700;
-      font-style: normal;
-    }
-
-    .scrapbook {
-      position: relative;
-    }
-
-    .scrapbook img {
-      -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.5));
-      position: absolute;
-      width: 200px;
-    }
-  </style>
+  <link href="/css/style.css?j" rel="stylesheet" />
 </head>
 
 <body>
   <div class="app">
     <div class="row">
       <div class="column top">
-        <h1 class="fun" style="transform:rotate(-2deg);">
-          Brandi <span style="font-weight:100;">+</span> David
-        </h1>
-        <h2 style="color:#ccc">
-          we're getting married!
-        </h2>
+        <a href="/" style="border:none;">
+          <h1 class="fun" style="transform:rotate(-2deg);">
+            Brandi <span style="font-weight:100;">+</span> David
+          </h1>
+          <h2 style="color:#ccc">
+            we're getting married!
+          </h2>
+        </a>
       </div>
     </div>
     <div class="row">
       <div class="column left scrapbook">
-        <img src="img/20241010_200120.jpg" style="z-index:5;left:0;top:-40px;transform:rotate(2deg);" />
-        <img src="img/20240710_111845.jpg" style="z-index:3;left:150px;top:20px;transform:rotate(-5deg);" />
-        <img src="img/20240629_172333.jpg" style="z-index:1;left:120px;top:260px;transform:rotate(3deg);" />
+        <img src="/img/20241010_200120.jpg" style="z-index:5;left:0;top:-40px;transform:rotate(2deg);" />
+        <img src="/img/20240710_111845.jpg" style="z-index:3;left:150px;top:20px;transform:rotate(-5deg);" />
+        <img src="/img/20240629_172333.jpg" style="z-index:1;left:120px;top:260px;transform:rotate(3deg);" />
       </div>
       <div class="column right info">
 
@@ -126,7 +42,8 @@
               style="color: #222;background-color:#fc0;padding:0 10px;">RSVP</span>
           </h2>
           <div>
-            <a href="mailto:moorewebb2025@gmail.com">moorewebb2025@gmail.com</a>
+            <a
+              href="mailto:moorewebb2025@gmail.com?subject=RSVP&body=Number of guests: [here]%0D%0ACamping at venue? [yes/no]">moorewebb2025@gmail.com</a>
           </div>
         </div>
 
@@ -148,20 +65,117 @@
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/836px-Google_Maps_icon_%282020%29.svg.png?20200218211225"
                 style="margin:0;padding:0 5px;width:14px;" />
             </a>
-            <!--<div style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:16px;font-weight:200;margin-top:18px;">
-              Nearest airport: <a href="https://maps.app.goo.gl/PULwknFsLxWvubaS8" target="_blank">RDU</a>
-            </div>-->
           </div>
         </div>
 
-        <!--- Dress Code -->
+        <!--- Ceremony -->
+        <div class="card">
+          <h2>Schedule</h2>
+          <div style="overflow:hidden;">
+            <a href="/ceremony/index.html">
+              <div class="button" style="margin-right:10px;float:left;">
+                Ceremony 🔒</div>
+            </a>
+            <a href="/reception/index.html">
+              <div class="button" style="margin-right:10px;float:left;">
+                Reception</div>
+            </a>
+          </div>
+          <div style="font-size:18px;">☝🏻 Click one of these to learn more</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column info">
+
+        <!--- Details -->
+        <div class="card">
+          <h1>Details</h1>
+          <hr />
+        </div>
+
+        <!--- Dress code -->
         <div class="card">
           <h2>Dress code</h2>
           <div>Festival attire!</div>
         </div>
 
+        <!--- Activities -->
+        <div class="card">
+          <h2>Activities</h2>
+          <ul>
+            <li><b>Game area</b> - Corn hole, bad minton, dart board, Big Jenga, Big Connect 4</li>
+            <li><b>Kids area</b> - Tepee, coloring, bubbles</li>
+            <li><b>Walk our journey</b> - Milestones walk</li>
+            <li>Audio guestbook</li>
+            <li>"Leave us a message" phone</li>
+            <li>Campfire area</li>
+            <li>S'mores bar</li>
+            <li>Hammocks in the woods</li>
+            <li>Disposable campera app</li>
+          </ul>
+        </div>
+
+        <!--- Gifts -->
+        <div class="card">
+          <h2>Gifts</h2>
+          <div>
+            In lieu of gifts, Brandi & David kindly ask for contributions toward their honeymoon adventure!
+          </div>
+        </div>
+
+        <!--- FAQ -->
+        <div class="card">
+          <h1>FAQ</h1>
+          <hr />
+          <h2>What about parking?</h2>
+          <div>
+            Parking areas will be labeled with signs. Please respect all fields you drive on.
+          </div>
+          <br />
+          <h2>Is the wedding kid friendly?</h2>
+          <div>
+            Yes! Please bring your kids! Although the night reception will have loud music until 11:30pm.
+          </div>
+          <br />
+          <h2>Can I bring my camper?</h2>
+          <div>
+            Guest campers are prohibited. A tent camping area will be provided. No hookups are available at
+            the venue, but bathrooms and showers are provided.
+          </div>
+          <br />
+          <h2>What if it rains?</h2>
+          <div>Cover is being provided in case of rainy weather.</div>
+        </div>
+
+        <!--- Contact -->
+        <div class="card">
+          <h1>Travel info</h1>
+          <hr />
+          <a href="/travel/index.html">
+            <div class="button" style="margin-right:10px;float:left;">
+              Click here to see nearby airports and hotels
+            </div>
+          </a>
+        </div>
+
+        <!--- Contact -->
+        <div class="card">
+          <h1>Contact</h1>
+          <hr />
+          <div>
+            You can ask us questions at <b><a
+                href="mailto:moorewebb2025@gmail.com?subject=Wedding Question: [Your Name]">moorewebb2025@gmail.com</a></b>
+            <br />with <i>"Wedding Question: [Your Name]"</i> in the subject line.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
+  </div>
   </div>
 </body>
 
